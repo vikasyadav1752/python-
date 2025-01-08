@@ -1,0 +1,225 @@
+Q1 Write a program that takes an integer input from the user and checks whether the number is odd or
+even.
+ 
+n = 6
+if(n%2==0):
+  print("even")
+else:
+  print("odd")
+
+Q2 Write a program that takes three numbers as input and prints the largest of the three.
+
+n1 = int(input("enter number 1"))
+n2 = int(input("enter number 2"))
+n3 = int(input("enter number 3"))
+if n1 > n2 and n1 > n3:
+    print(n1, "is the grastest number")
+elif n2 > n1 and n2 > n3:
+    print(n2 , "is the grastest number")
+
+
+else:
+    print(n3 , ("is the  grastest number"))
+
+3.Write a program to check if a given year is a leap year. A leap year is divisible by 4 but not by 100
+unless it is also divisible by 400.
+
+year = int(input("enter year"))
+if(year%4==0 and year%100!=0):
+  print("leap year")
+  if(year%400==0):
+    print("leap year")
+else:
+  print("not leap year")
+
+4.Write a program that takes a percentage (integer) as input and prints the corresponding grade based
+on the following criteria:
+>= 90: Grade A
+>= 80: Grade B
+>= 70: Grade C
+>= 60: Grade D
+< 60: Grade F
+
+number = int(input("enter number"))
+if(number>=90):
+  print("grade A")
+elif(number>=80 and number<=90):
+  print("grade B")
+elif(number>=70 and number<=80):
+  print("grade C")
+elif(number>=60 and number<=70):
+  print("grade d")
+else:
+  print("fail")
+
+5.Write a program that checks if a given letter is a vowel (a, e, i, o, u) or a consonant.
+
+alfabet = input("enter alfabet")
+if(alfabet=="a" or alfabet=="e" or alfabet=="i" or alfabet=="o" or alfabet=="u"):
+  print("vowel")
+else:
+  print("consonant")
+
+6.Write a basic calculator program that takes two numbers and an operator (+, -, *, /) as input and
+performs the specified operation. Print the result based on the operation.
+
+num1 = int(input("enter number 1"))
+num2 = int(input("enter number 2"))
+opr  = input("enter opr")
+if(opr=="+"):
+  print(num1+num2)
+elif(opr=="-"):
+  print(num1-num2)
+elif(opr=="*"):
+  print(num1*num2)
+elif(opr=="/"):
+  print(num1/num2)
+else:
+  print("invalid opr")
+
+7.Write a program that takes a number as input and checks whether it is positive, negative, or zero.
+
+number = int(input("enter number"))
+if(number>0):
+  print("positive")
+elif(number<0):
+  print("negative")
+else:
+  print("zero")
+
+8. Write a program that checks if a username and password entered by the user match the pre-set values
+username = "admin" and password = "1234". If both match, print "Login Successful", otherwise print
+"Login Failed".
+
+username = input("enter username")
+password = input("enter password")
+
+
+if(username == 'admin' and password == '1234'):
+  print("Login Successful",)
+else:
+  print("loging faild")
+
+9.Write a program that takes three sides of a triangle as input and checks if those sides form a valid
+triangle. A triangle is valid if the sum of any two sides is greater than the third side.
+Check conditions like a + b > c, b + c > a, and a + c > b.
+
+a = input("enter a")
+b = input("enter b")
+c = input("enter c")
+if a + b > c and b + c > a and a + c > b:
+    print("triangle")
+else:
+    print("not triangle")
+
+10.Write a program that calculates the Body Mass Index (BMI) based on user input for weight (in
+kilograms) and height (in meters). Then categorize the BMI into:
+Underweight (BMI < 18.5)
+Normal weight (18.5 <= BMI < 24.9)
+Overweight (25 <= BMI < 29.9)
+Obesity (BMI >= 30)
+
+weight = float(input("Enter weight in kg: "))
+height = float(input("Enter height in meters: "))
+
+
+BMI = weight / (height ** 2)
+
+
+if BMI < 18.5:
+    print("Underweight")
+elif 18.5 <= BMI < 24.9:
+    print("Normal weight")
+elif 25 <= BMI < 29.9:
+    print("Overweight")
+elif BMI >= 30:
+    print("Obesity")
+
+11. Write a program that calculates the discount for a product based on its price:
+If price is greater than 1000, discount is 10%
+If price is between 500 and 1000, discount is 5%
+Otherwise, no discount
+
+price = int(input("enter price"))
+if(price>1000):
+  print("10% discount")
+elif(price>500 and price<=1000):
+  print("5% discount")
+else:
+  print("no discount")
+
+12.Write a program that takes the name of a month as input and prints the number of days in that
+month. Consider leap years for February.
+
+month = input("enter month")
+
+
+if month == "January" or month == "March" or month == "May" or month == "July" or month == "August" or month == "October" or month == "December":
+  print("31 days")
+elif month == "April" or month == "June" or month == "September" or month == "November":
+  print("30 days")
+elif month == "february":
+  print("28 or 29 days")
+else:
+  print("invalid month")
+
+13.Write a program that simulates a simple ATM. The user should be able to:
+Check balance
+Deposit money
+Withdraw money (ensure the balance doesn't go negative) Use an if-else structure to handle the user's
+
+enter = input("Please enter option")
+
+
+if enter == "1":
+  print("Check balance")
+elif enter == "2":
+  print("Deposit money")
+elif enter == "3":
+  print("Withdraw money")
+
+14.Write a program that categorizes a given age into different groups:
+Infant (0-1 year)
+Toddler (2-4 years)
+Child (5-12 years)
+Teenager (13-19 years)
+Adult (20-59 years)
+Senior (60 years and above)
+
+age = int(input("enter your age"))
+
+if age >= 0 and age <= 1:
+  print("infant")
+elif age >= 2 and age <= 4:
+  print("toddler")
+elif age >= 5 and age <= 12:
+  print("child")
+elif age >= 13 and age <= 19:
+  print("teenager")
+elif age >= 20 and age <= 59:
+  print("adult")
+elif age >= 60:
+  print("senior citizen")
+
+15.Write a program that takes an integer (1-7) as input and prints the corresponding day of the week (1
+for Monday, 2 for Tuesday, etc.).
+
+day = int(input("enter number"))
+
+
+if day == 1:
+  print("monday")
+elif day == 2:
+  print("tuesday")
+elif day == 3:
+  print("wednesday")
+elif day == 4:
+  print("thursday")
+elif day == 5:
+  print("friday")
+elif day == 6:
+  print("saturday")
+elif day == 7:
+  print("sunday")
+else:
+  print("invalid")
