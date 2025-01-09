@@ -1,0 +1,67 @@
+for i in range(50,9,-1):
+  print(i)
+
+total = 0
+for i in range(1,11):
+
+  total = total + i
+
+  print("i" , total)
+
+count = 0
+for i in range(69,3, -1):
+  count = count + 1
+  print(i , count)
+
+for i in range(1,13):
+  if i%3==0:
+    print(i)
+
+
+even_sum=0
+odd_sum=0
+for i in range(1,11):
+  if i%2==0:
+    even_sum=even_sum+i
+  else:
+    odd_sum=odd_sum+i
+print(even_sum)
+print(odd_sum)
+
+#method 1
+data = "regexsoftware"
+for i in range(0,len(data)):
+  if(data [i]=="a" or data [i]=="e" or data [i]=="i" or data [i]=="o" or data [i]=="u"):
+    print(i,data[i])
+
+#method 2
+for i in range(0,len(data)):
+  if data[i] in "aeiou":
+    print(i,data[i])
+
+#method 3
+for i in data:
+  if i in "aeiou":
+    print(i)
+
+count = 0
+for i in range(0,len(data)):
+  if data[i] not in "aeiou":
+    count = count + 1
+print(count)
+
+x="rajasthan"
+for i in range(0,len(x)//2):
+  print(x[i])
+
+for i in range(1,5):
+  if(i==2):
+    continue
+  else:
+    print(i)    
+
+for i in range(1,20):
+  if(i%3==0):
+    continue
+  else:
+    print(i)
