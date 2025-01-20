@@ -1,0 +1,20 @@
+1. mydictionary={1:"tushar",2:"aman",3:"vicky"}
+mydictionary[4]="yash"
+print(mydictionary)
+
+2.mydictionary={1:"tuhar",2:"aman",3:"vicky"}
+help(mydictionary)
+
+
+3. mydictionary={1:"tuhar",2:"aman",3:"vicky"}
+for i in mydictionary.items():
+  print(i)
+
+4. x=(10,20)
+a,b=x
+print(a,b)
+
+5. mydictionary={"x":100}
+mydictionary["x"]=mydictionary["x"]+50
+print(mydictionary)
+
