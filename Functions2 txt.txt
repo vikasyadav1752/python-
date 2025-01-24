@@ -1,0 +1,39 @@
+def func(num):
+    print("function inside:",id(num),(num))
+    num=601
+    print("function inside:",id(num),(num))
+
+num=600
+print(id(num))
+func(num) 
+
+
+def func(x,y,z):
+    print("x:",x, "y:",y,"z:",z)   #required argument
+    
+func(10,20,30)  
+
+
+
+def func(x,y,z):
+    print("x:",x, "y:",y,"z:",z)    #positional argument
+    
+func(20,10,30)
+func(30,10,20)    
+
+
+def func(x,y,z):
+    print("x:",x, "y:",y,"z:",z)     #keyword argument
+    
+func(y=20,x=10,z=30) 
+
+
+
+def func(x,y,z="abc"):
+    print("x:",x, "y:",y,"z:",z)     #default argument
+    
+func(10,y=20,z="xyz") 
+
+
+
+
