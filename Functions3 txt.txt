@@ -1,0 +1,49 @@
+
+Find Factorial of a Number
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+print(factorial(5))  # Output: 120
+
+
+Count Vowels in a String
+
+python
+Copy
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    return sum(1 for char in s if char in vowels)
+
+print(count_vowels("hello world"))
+
+
+
+Check if a Number is Prime
+
+python
+Copy
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(is_prime(29)) 
+print(is_prime(15))
+
+
+
+Reverse a String
+
+python
+Copy
+def reverse_string(s):
+    return s[::-1]
+
+print(reverse_string("hello"))
