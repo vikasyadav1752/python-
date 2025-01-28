@@ -1,0 +1,40 @@
+#variable length arument (*var)
+def func(*data):
+  print(data)
+  print(type(data))
+
+func()
+func(10,20)
+func("abc",20,10)
+
+#keyword variable length arument (*var)
+#*args amd **kwargs
+def func(**data):
+  print(data,)
+  print(type(data))
+
+func(eid=10, salary=20)
+
+def func(num):
+  print(num+5)
+  return num+5
+
+y=func(20)
+print('y:',y)
+
+def func():
+  print("hello function")
+
+
+x=func   # we have assigne function to a variable
+func()
+x()
+
+def square(num):
+  return (num**2)
+
+
+def cube(x,y):
+  print("cube:",x * y(x))
+
+cube(10, square)
