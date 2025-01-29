@@ -1,0 +1,32 @@
+def func(x):
+  y=x.split(" ")
+  print(y)
+
+func
+
+#lambda
+a=lambda x: x.split(" ")
+a("hey hyy")
+
+def func5(num):
+    return num*5
+
+out=map(func5, [10,20,7] )
+next(out)
+
+next(out)
+
+next(out)
+
+def func5(num):
+    return num*5
+
+list( map(func5, [10,20,7]) )
+
+
+list(filter(lambda num: num%2==0, [10,20,7,67,98,43]))
+
+#file handling
+# mechanish = file yh data store kr skte hai in file
+
+
