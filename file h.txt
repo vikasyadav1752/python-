@@ -1,0 +1,43 @@
+
+fileobj=open("vk.txt","r+")
+fileobj.write("##")
+x=fileobj.read()
+fileobj.close()
+
+print(x)
+
+
+with open ("vk.txt","r") as f:
+    x=f.read()
+print(x)
+
+
+
+with open("vk.txt","r") as f:
+    for line in f:
+        print(line)
+
+
+
+with open("vk.txt","r") as f:
+    print(f.readlines())
+
+
+with open ("vk.txt") as f:
+    for line in f:
+        print(line.strip(),  type(line)
+
+with open("vk.txt","r") as f:
+    for line in f:
+        line=line.split(",")
+        print("name:",name,"age:",age)
+
+
+import csv 
+with open("vk.txt","r") as fileobj:
+    fCsv=csv.reader(fileobj)
+    for line in fCsv:
+        name,age=line
+        print("name:",name,"Ages:",age)
+
+
