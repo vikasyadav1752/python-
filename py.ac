@@ -1,0 +1,90 @@
+1.to check whether a number is a palindrome or not
+num = input("Enter a number: ")  
+
+if num == num[::-1]:  
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+
+
+
+2. # to check whether a string is a palindrome or not
+
+a = input("enter number")
+
+
+n = a[::-1]
+
+if a==n:
+    print("palindrome")
+else:
+    print("not plaindrome")
+
+
+
+
+
+3.to take a number and print all its factor
+
+num = int(input("enter number"))
+
+for i in range (1, num+1):
+    if num % i ==0:
+        print(i)
+
+4.list  =>[10,20,30,40123,123,123]
+# to check which number are more than target=70
+
+lst = [10, 20, 30, 40123, 123, 123] 
+target = 70  
+
+for num in lst:
+    if num > target:
+        print(num)
+
+5. *
+   * *
+  * * *
+n = 3  
+
+for i in range(1, n + 1):  
+    
+    for j in range(n - i):
+        print(" ", end="")  
+    
+    for k in range(i):
+        print("* ", end="")  
+    print() 
+
+6.* * * *
+    * * *
+     * *
+      *
+rows = 4  
+
+for i in range(rows, 0, -1):  
+    
+    for j in range(rows - i):
+        print(" ", end="")  
+    
+    
+    for k in range(i):
+        print("* ", end="")  
+    
+    print()
+
+
+7. #list  =>[10,20,30,40123,123,123]
+# to check which two number make the value 143
+
+lst = [10, 20, 30, 40123, 123, 123]
+target = 143
+
+for num in lst:
+    if (target - num) in lst and num != (target - num):  
+        print(num, target - num)
+        break  
+
+
+
