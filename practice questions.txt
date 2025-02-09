@@ -1,0 +1,26 @@
+a, b = 0, 1
+for _ in range(10):
+    print(a, end=" ")
+    a, b = b, a + b
+
+
+
+text = "banana"
+freq = {}
+for char in text:
+    freq[char] = freq.get(char, 0) + 1
+print(freq)
+
+
+
+num = int(input("Enter a number: "))
+fact = 1
+for i in range(1, num + 1):
+    fact *= i
+print("Factorial:", fact)
+
+
+
+student = {"name": "Vikas", "age": 22, "course": "Python"}
+for key, value in student.items():
+    print(key, ":", value)
