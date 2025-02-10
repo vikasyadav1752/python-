@@ -1,0 +1,35 @@
+for i in range(8,3,-1):
+  print("hey",i)
+
+for i in range(10,20):
+  print("hey",i)
+
+for i in range(22,9,-1):
+  print("hey",i)
+
+for i in range(2,10):
+    if i%2==0:
+      print("even",i)
+    else:
+      print("odd",i)
+
+for i in range(2,50):
+  if i%2==0 and i%4==0:
+    print("yes",i)
+
+for i in range(70,18,-1):
+  if i%2==0 or i%5==0:
+    print(i)
+
+sum = 0
+for i in range(2,8):
+  print(i)
+  sum += i
+print(sum)
+
+
+city='jaipur'
+for i in range(0,6):
+  if city[i]=="a" or city[i]=="u":
+      print(i)
+  
