@@ -1,0 +1,47 @@
+def avg_marks(a,b,c,d,e):
+  return(a+b+c+d+e/5)
+
+out=avg_marks(50,60,70,80,90)
+print("output:",out)
+
+if(out>300):
+  print("he is a topper with",out)
+else:
+  print("he is a passed candidate with avg",out)
+
+
+
+
+
+
+def pal_number()
+
+  num = 121
+  original_num = num
+  reverse_num = 0
+
+  while num > 0:
+      digit = num % 10
+      reverse_num = reverse_num * 10 + digit
+      num = num // 10
+
+  if original_num == reverse_num:
+      print(f"{original_num} is a palindrome.")
+  else:
+      print(f"{original_num} is not a palindrome.")
+
+
+
+
+
+def triange(num):
+    for i in range(1,num+1):
+      for j in range(1,i,+1):
+        print("*", end=" ")
+      print()
+    for i in range(1,num):
+      for j in range(i,num):
+        print("*", end=" ")
+      print()
+
+triange(5)
