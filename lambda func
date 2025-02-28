@@ -1,0 +1,31 @@
+def addNo(num):
+  print(num+50)
+
+addNo(20)
+
+def addNo(num):
+  print(num+50)
+
+def gracenumber(x,y):
+  print(x,y)
+
+gracenumber(20,10)
+
+def addNo(num):
+  return(num+50)
+
+def gracenumber(x,y):
+  print(x+y(15))
+
+gracenumber(10, addNo)
+
+def func(num):
+  return num+5
+
+x=lambda num : num+5
+x(10)
+
+mylist=[10,20,30,35]
+list(filter(lambda x : x%2==0, mylist))
+
+
