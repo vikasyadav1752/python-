@@ -1,0 +1,70 @@
+n = 8
+for i in range(1,8):
+  if i%n==0:
+    print(i)
+
+i =1
+n = 8 
+
+while i<8:
+  if n%i==0:
+    print(i)
+  i = i+1
+
+
+i = 1
+n = 50
+
+while i<50:
+  if n%i==0:
+    print(i)
+  i = i+1  
+
+num = 9
+
+for i in range(2,num):
+  if(num%i==0):
+    print("not a prime number",i)
+    break
+  else:
+    print("this is a prime number")
+
+x = 7
+n = 0 
+
+for i in range(1,5):
+  if (x==8):
+    n = 1
+    break
+  print("hello",x)
+
+print(n)
+
+num = 7
+x = 0
+for i in range(2,num):
+  if(num%i==0):
+    print("not a prime number",i)
+    x = 1
+    break
+
+if (x==0):
+  print("prime number")
+  
+
+
+num = 27
+for i in range(2,11):
+  if num%i==0:
+    print(i)
+    break
+
+total = 0
+num = 40
+for i in range(1,41):
+  if num%i==0:
+    print(i)
+    total +=i
+
+print(total)
+    
