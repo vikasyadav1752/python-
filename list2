@@ -1,0 +1,24 @@
+mylist =[100,12,13,14,15]
+
+mylist.append(70)
+
+print(mylist)
+
+mylist =[100,12,13,14,15]
+mylist[0]=50
+mylist.append(70)
+
+print(mylist)
+
+mylist =[100,12,13,14,15]
+mylist[0]=50
+mylist.append(70)
+mylist.pop()
+print(mylist)
+
+mylist =[100,12,13,14,15]
+mylist.remove(13)
+print(mylist)
+
+mylist.insert(0,80)
+print(mylist)
