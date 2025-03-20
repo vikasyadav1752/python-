@@ -1,0 +1,62 @@
+userdetail={100: "tushar", 101:"aman"}
+print(userdetail[100])
+print(type(userdetail))
+
+#insert
+userdetail={100: "tushar", 101:"aman"}
+userdetail[102]="ujjwal"
+print(userdetail)
+
+#update
+userdetail={100: "tushar", 101:"aman"}
+userdetail[102]="rahul"
+print(userdetail)
+
+#delete
+userdetail={100: "tushar", 101:"aman"}
+userdetail.pop(101)
+print(userdetail)
+
+
+userdetail={100: "tushar", 101:"aman"}
+print("keys", userdetail.keys())
+print("values", userdetail.values())
+print("items", userdetail.items())
+
+
+userdetail={100: "tushar", 101:"aman"}
+userdetail.update({100: "rahul", 101:"aman"})
+print(userdetail)
+
+mydictionary={}
+for i in range(10,16):
+  if(i%2==0):
+    mydictionary[i]=1
+print(mydictionary)
+
+
+mydictionary={}
+s="hey ura"
+for i in s:
+  if(i=="a" or i=="e"or i=="o" or i=="i" or i=="u"):
+    mydictionary[i]=1
+print(mydictionary)
+
+
+
+x= {"salary":100}
+if("salary" in x):
+  x["salary"]=x["salary"]+10
+else:
+  x["salary"]=10
+print(x)
+
+mydictionary={}
+s="heey ureaa"
+for i in s:
+  if(i=="a" or i=="e"or i=="o" or i=="i" or i=="u"):
+    if(i in mydictionary):
+      mydictionary[i] = mydictionary[i]+1
+    else:
+      mydictionary[i]=1
+print(mydictionary)
