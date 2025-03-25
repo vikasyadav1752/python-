@@ -1,0 +1,30 @@
+student = {"vicky": 170} 
+student["name"] = "Vikas"
+print(student)
+
+s = [10,40,20,30]
+d = {}
+for i in s:
+  if i in d:
+    d[i]=d[i]+1
+  else:
+    d[i]=1
+print(d)
+ 
+
+l = [10,40,20,30]
+dic ={}
+for i in range(0,len(l)):
+   dic[l[i]]=i
+print(dic)
+
+total = 0 
+mydictionary = {"A": "65", "B": "66", "C": "67"}
+
+for i in "ABC":
+    if i in mydictionary:
+        print(mydictionary[i]) 
+        total += int(mydictionary[i])  
+
+print(total)
+
