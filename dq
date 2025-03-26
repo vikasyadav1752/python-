@@ -1,0 +1,51 @@
+l = [10,40,20,30]
+dic ={}
+for i in range(0,len(l)):
+   dic[l[i]]=i
+print(dic)
+
+total = 0
+mydictionary = {"A": "65", "B": "66", "C": "67"}
+
+for i in "ABC":
+    if i in mydictionary:
+        print(mydictionary[i])
+        total += int(mydictionary[i])
+
+print(total)
+
+
+
+data ="abc"
+myd = {}
+for i in range(0,1):
+  print(i,data[i])
+  for j in range(1,len(data)):
+    if (data[i]+data[j] not in myd):
+      myd[data[i]+data[j] ] = 1
+print(myd)
+
+data ="abc"
+myd = {}
+for i in range(0,len(data)):
+    if (data[i] not in myd):
+      myd[data[i] ] = 1
+    for j in range(1,len(data)):
+      if (data[i]+data[j] not in myd):
+        myd[data[i]+data[j] ] = 1
+print(myd)
+
+
+num =6
+
+data = " "
+myd = {10:"X" ,5: "V" , 4: "IV" , 1: "I" , 9:"IX"}
+
+for i in myd.items():
+  key =i[0]
+  value=i[1]
+
+  while(num>=key):
+    data=data+value
+    num -= key
+print(data)
