@@ -1,0 +1,28 @@
+myset ={10,20,30,40,10,10}
+print(myset)
+
+myset ={10,20,30,40,10,10}
+myset.add(80)
+myset.add("hey")
+print(myset)
+
+myset ={10,20,30,40,10,10}
+myset.add("hey")
+myset.update("hey")
+print(myset)
+
+myset ={10,20,30,40,10,10}
+myset.add("hey")
+myset.update("hey")
+myset.pop()
+myset.remove(40)
+print(myset)
+
+#list comprehension
+ [x for x in range(2,7)]
+
+[x**2 for x in range(2,7)]
+
+#dictionary comprehension
+list1= [4,9,16,25,36]
+{i:1 for i in list1}
