@@ -1,0 +1,21 @@
+out = lambda x : "hey"
+out(10)
+
+def number_square(x):
+    return x*x
+
+y= map(number_square,[5,7,8])
+
+next(y)
+
+y= map(lambda x:x**2,[5,7,8])
+
+next(y)
+
+list( map(lambda x:x**2,[5,7,8]))
+
+list( map(lambda x:x%2==0,[5,7,8]))
+
+list( filter(lambda x:x%2==0,[5,7,8]))
+
+list( map(lambda x:(x,1),[5,7,8]))
