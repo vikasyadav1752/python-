@@ -1,0 +1,62 @@
+class dog:
+    def__init__(self, name, breed):
+        self.name = name
+        self.breed = breed 
+
+
+class dog:
+    def__init__(self, name, breed):
+        self.name = name
+        self.breed = breed 
+
+def bark(self):
+    print(f"{self.name} says woof!")
+
+
+class calculator:
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+    def add(self):
+        return self.num1 + self.num2
+    def subtract(self):
+        return self.num1 - self.num2
+    def multiply(self):
+        return self.num1 * self.num2
+    def divide(self):
+        if self.num2 != 0:
+            return self.num1 / self.num2
+        else:
+            return "Division by zero is not allowed!"
+
+calc = calculator(10,2)
+print(calc.add())
+print(calc.add())
+print(calc.multiply())
+print(calc.divide())
+
+
+class BankAccount:
+    def __init__(self, holder_name, balance=0):
+        self.holder_name = holder_name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"{amount} deposited > new balance: {self.balance}")
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"{amount} withdrawn > remaining balance: {self.balance}")
+        else:
+            print("Insufficient balance")
+
+    def check_balance(self):
+        return f"Account balance for {self.holder_name} is {self.balance}"
+
+# Usage
+account = BankAccount("vicky", 1000)
+account.deposit(500)
+account.withdraw(200)
+print(account.check_balance())
