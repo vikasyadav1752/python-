@@ -1,0 +1,66 @@
+#opps
+
+#abject oriented programing systum 
+# objecgt => real timr entity => characterstic and behaviour
+# object
+#class blueprint
+
+class HouseDesign:
+  color = "white"
+  room = 4
+
+  def rent(self):
+    print("house will be sor rent")
+
+# Create an instance of the class
+h1 = HouseDesign()
+
+# Now you can call the rent method
+print(h1.color, h1.room)  
+h1.rent()
+
+class HouseDesign:
+  color="white"
+  room= 4
+
+
+h1= HouseDesign()
+print(h1.color)
+h1.color="orange"
+print("new color", h1.color)
+
+class HouseDesign:
+  color="white"
+  room= 4
+
+h1=HouseDesign()
+print(h1.color)
+
+HouseDesign.color="yellow"
+print(HouseDesign.color)
+
+class HouseDesign:
+  def __init__(self):
+    print("constructor ko bulaya")
+
+h1=HouseDesign()
+print("h1 =>", h1)
+
+class HouseDesign:
+    def __init__(self, x, y):
+        self.color = x
+        self.room = y
+        print("constructor ko bulaya", self.color, self.room)
+
+
+h1 = HouseDesign("yellow", 5)
+
+class HouseDesign:
+    def __init__(self, x, y):
+        self.color = x
+        self.room = y
+    def info(self): # Make sure this method is included in the class definition
+      print(f"house has color {self.color} and room is {self.room}")
+
+h1 = HouseDesign("yellow", 5)
+h1.info() # Now this line should work without error
