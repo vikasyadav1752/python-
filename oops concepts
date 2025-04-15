@@ -1,0 +1,94 @@
+
+class Employee:
+  def __init__(self, name, salary):
+    self.name = name
+    self.salary = salary
+
+  def getInfo(self):
+    print(f"name or employee is: {self.name} and salary is: {self.salary}")
+
+
+a = Employee('sam', 20000)
+a.getInfo()
+print(a.name)
+
+class BankAccount:
+    def __init__(self, account_holder, balance):
+        self.__account_holder = account_holder
+        self.__balance = balance
+
+    def get_account_holder(self):
+        return self.__account_holder
+
+    def get_balance(self):
+        return self.__balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            return f"Deposit successful. New balance: {self.__balance}"
+        else:
+            return "Invalid deposit amount"
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+            return f"Withdrawal successful. New balance: {self.__balance}"
+        else:
+            return "Insufficient funds"
+
+# Create an account object and test it
+account = BankAccount("Vicky", 1000)
+print(account.get_account_holder())
+print(account.get_balance())
+print(account.deposit(500))
+print(account.withdraw(200))
+
+
+class Student:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+
+    def get_grade(self):
+        return self.grade
+
+    def set_grade(self, new_grade):
+        if 0 <= new_grade <= 100:
+            self.grade = new_grade
+            return "Grade updated"
+        else:
+            return "Invalid grade!"
+
+student = Student("Vicky", 85)
+print(student.name)
+print(student.get_grade())
+print(student.set_grade(90))
+print(student.get_grade())
+print(student.set_grade(120))
+
+
+
+class Patient:
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
+        self.__medical_history = []
+
+    def add_medical_record(self, record):
+        self.__medical_history.append(record)
+        return f"Medical record added for {self.__name}"
+
+    def get_medical_history(self):
+        return f"Medical history for {self.__name}: {self.__medical_history}"
+
+# Create Patient object
+patient = Patient("Vicky", 30)
+
+# Add medical records
+print(patient.add_medical_record("2024: Flu diagnosis"))
+print(patient.add_medical_record("2024: Blood test results normal"))
+print(patient.add_medical_record("2024: COVID"))
+
+# Print full medical history
+print(patient.get_medical_history())
