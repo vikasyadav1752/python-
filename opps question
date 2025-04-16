@@ -1,0 +1,74 @@
+# Customer Class
+class Customer:
+    def __init__(self, name, contact):
+        self.name = name
+        self.contact = contact
+
+    def get_customer_details(self):
+        return f"Customer Name: {self.name}, Contact: {self.contact}"
+
+
+# Product Class
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def get_product_details(self):
+        return f"Product Name: {self.name}, Price: ₹{self.price}"
+
+
+# Order Class inheriting from Customer and Product
+class Order(Customer, Product):
+    def __init__(self, customer_name, contact, products):
+        Customer.__init__(self, customer_name, contact)
+        self.products = products  # List of Product objects
+
+    def generate_order_summary(self):
+        print(self.get_customer_details())
+        print("\nOrder Summary:")
+        total = 0
+        for product in self.products:
+            print(product.get_product_details())
+            total += product.price
+        print(f"\nTotal Amount: ₹{total}")
+
+
+# Example Usage
+# Creating some products
+product1 = Product("Laptop", 50000)
+product2 = Product("Mouse", 800)
+product3 = Product("Keyboard", 1200)
+
+# Creating an order
+order = Order("Vikas", "9876543210", [product1, product2, product3])
+
+# Generating order summary
+order.generate_order_summary()
+
+
+
+class ABC:
+  _x=10
+  __salary=900
+
+a1=ABC()
+a1._ABC__salary
+
+from abc import ABC, abstractmethod
+class Company(ABC):
+  name ="regex sofware"
+  @abstractmethod
+  def salary(self):
+    pass
+
+class Employee(Company):
+  def info(self):
+    print("employee name is aman")
+  def salary(self):
+    print("salary for employee is 20000")
+
+
+e1=Employee()
+e1.info()
+print(e1.name)
