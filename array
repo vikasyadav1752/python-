@@ -1,0 +1,62 @@
+a = [[1,2,3] , [4,5,6] , [7,8,9]]
+b = np.array(a) 
+b
+
+# Functions 
+
+# (1). zeros() ----> 
+a = np.zeros(4) 
+a
+
+# (2). ones() ---> It will create an array in which all the values are 1 . 
+a = np.ones(4) 
+a
+
+# (3). eye() ----> It will create an array in which digonal positional 
+# elements will be 1 and rest all are 0 . 
+
+a = np.eye(3) 
+a
+
+# (4). diag() ----> Using this method , we can create an array in which we can
+# customize our digonal positional elements . 
+
+a = np.diag([1,45,67,90])
+a
+
+# (5). Random Module 
+
+# (a). Randint() ----> It will generate random numbers in a given range. 
+# syntax: np.random.randint(min_value , max_value , total_numbers)
+
+a = np.random.randint(1,10,3)
+a
+
+# (b). Rand() ----> It will generate random numbers in range 0-1. 
+
+a = np.random.rand(3,3) 
+a
+
+# (c). seed() ----> It will fix our random generated data . 
+
+np.random.seed(30) 
+a = np.random.randint(1,10,3)
+a
+
+# (6). view vs copy ------> 
+# view means modification in original dataset . 
+# copy means modification in duplicate data . 
+
+a = np.array([1,2,3,4,5,6,7,8,9])
+b = a[2:5]
+b[:] = 0 
+b
+
+a
+
+a = np.array([1,2,3,4,5,6,7,8,9])
+b = a[2:5].copy() 
+b[:] = 0 
+b
+
+a
