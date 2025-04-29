@@ -1,0 +1,20 @@
+import pandas as pd
+
+#series
+ a = pd.series([1,45,78,90])
+ a
+
+type(a)
+
+#data frame
+
+a = {
+    "emp_id": [1,2,3,4,5],
+    "name":['sam', 'raj', 'mohit','rohan','rahul']
+    "department": ['it','sales', 'sales','it','it']
+    "salary" : [2000,3000,4000,5000,]
+
+}
+
+df = pd.dataframe(a)
+df
