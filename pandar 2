@@ -1,0 +1,30 @@
+import pandas as pd
+df = pd.read_csv("/content/covid_toy - covid_toy.csv")
+print(df)
+
+
+df2 = pd.read_csv("/content/placement - placement.csv")
+print(df2)
+
+df2.head()
+
+df2.tail()
+
+df2.describe()
+
+df2.info()
+
+top_lefrt_corner_df2 = df2.iloc[:4, :3]
+print(top_lefrt_corner_df2)
+
+df2.loc[1:3 , ['cgpa','placed']]
+
+p = df2.dtypes
+p
+
+b = df2.empty
+b
+
+df2.isnull().sum()
+
+df2.dropna()
