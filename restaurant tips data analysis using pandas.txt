@@ -1,0 +1,11 @@
+tips = sns.load_dataset('tips')
+tips
+
+sns.scatterplot(x = tips['total_bill'], 
+                y = tips['tip']
+                )
+
+sns.scatterplot(x="total_bill", y="tip", data=tips, hue="sex")
+
+
+sns.scatterplot(x="total_bill", y="tip", data=tips, hue="sex", style="smoker")
