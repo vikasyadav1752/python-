@@ -1,0 +1,17 @@
+import numpy as np
+
+# Step 1: Create a (5, 5) array with random integers from 1 to 100
+arr = np.random.randint(1, 101, size=(5, 5))
+print("Original Array:\n", arr)
+
+# Step 2: Find the maximum value
+max_val = np.max(arr)
+print("\nMaximum Value:", max_val)
+
+# Step 3: Find the row index of the maximum value
+row_index = np.where(arr == max_val)[0][0]
+print("Row Index of Maximum Value:", row_index)
+
+# Step 4: Replace all even numbers with 0
+arr[arr % 2 == 0] = 0
+print("\nArray After Replacing Even Numbers with 0:\n", arr)
