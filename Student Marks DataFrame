@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Create a dictionary with student data
+data = {
+    'Name': ['Ravi', 'Anita', 'Vikas', 'Pooja', 'Amit'],
+    'Maths': [88, 92, 79, 85, 90],
+    'Science': [84, 89, 76, 80, 95],
+    'English': [78, 94, 83, 88, 91]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print(df)
