@@ -1,0 +1,64 @@
+-- dataType in SQL
+ -- datatype
+ -- number ( int, float, double)
+ -- character ( char, varchar, string)
+ -- data, timestamp
+ -- create statement
+ 
+ -- int
+ create table test(id int);
+ insert into test values(10);
+ select * from test;
+ 
+ -- tintint
+ create table test2( id tinyint);
+ insert into test2 values(127);
+ select * from test2;
+-- unsigned
+ create table test3( id tinyint unsigned);
+ insert into test3 values(127);
+ select * from test3;
+ 
+ -- decimal
+ create table test4( id decimal(5,2 ) );
+ insert into test4 values(845);
+  insert into test4 values(845.74125);
+   insert into test4 values(845.4);  -- will give error
+ select * from test4;
+ 
+ -- string data
+ 
+ -- char
+create table test5( fname char(5) ); -- fixed length character
+insert into test5 values('hi');
+insert into test5 values('hirr');
+insert into test5 values('hfdgri');
+select * from test5;
+
+-- varchar
+create table test6( fname varchar(5) ); -- varchar -- variable character
+insert into test6 values('hi');
+insert into test6 values('hirr     ');
+insert into test6 values('hfdgri');
+select fname, char_length(fname) from test6;
+select * from test6;
+
+-- date and timestamp
+
+create table test7(dob date);
+insert into test7 values('2023-12-01'); -- right yyyy-mm-dd
+insert into test7 values(01-01-2025); #error (incrrect formet
+select * from test7;
+
+create table test8(dob timestamp);
+insert into test8 values('2023-12-01 10:15:59'); -- right yyyy-mm-dd
+insert into test8 values( now() ); #error (incrrect formet
+select * from test8;
+ 
+-- subquery
+-- query within a query
+select payment_id, amount from payment;
+select amount from payment where payment_id= 15
+
+select * from payment;
+select * from payment where amount=2.99;
