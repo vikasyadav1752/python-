@@ -1,0 +1,62 @@
+# logisticRegression Model ---> supervised Ml model --> classify
+
+#when we have target column as catgrorical data
+
+
+# logistic regression model =>
+#sigmoid activation function --> when we have target data categrocical and we have only 
+# 2 sub -categrories
+
+#sub-categroy ---> probability -- 0-1 ---
+#fx x>o.5:
+#   return 1
+#wlse:
+      #return 0
+      
+
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv('/content/Social_Network_Ads - Social_Network_Ads.csv')
+
+df.head(2)
+
+from sklearn.preprocessing import LabelEncoder
+
+lb = LabelEncoder()
+
+df['Gender'] = lb.fit_transform(df['Gender'])
+
+df.head(2)
+
+df = df.drop(columns = ['User ID'])
+
+df.head(2)
+
+x = df.drop(columns = ['Purchased'])
+y = df['Purchased']
+
+from sklearn.model_selection import train_test_split
+
+x_train , x_test , y_train , y_test = train_test_split(x,y,test_size = 0.2,random_state = 2)
+
+from sklearn.linear_model import LogisticRegression
+
+
+lr = LogisticRegression()
+
+lr.fit(x_train , y_train)
+
+y_pred = lr.predict(x_test)
+
+from sklearn.metrics import accuracy_score
+
+accuracy_score(y_test , y_pred)
+
+from sklearn.metrics import precision_score
+
+precision_score(y_test , y_pred)
+
+from sklearn.metrics import confusion_matrix
+
+confusion_matrix(y_test , y_pred)
